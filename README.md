@@ -17,13 +17,15 @@ npm install --save-dev webpack-cli
   "dependencies": {
       "@aws-sdk/client-cognito-identity": "^3.32.0",
       "@aws-sdk/credential-provider-cognito-identity": "^3.32.0"
-  }
+  },
 ```
 
 4. Run `npm install` to automatically install the new dependencies.
 
-5. Run `npm run build` to generate `aws_test_browser.js` from `aws_test.js`
+5. Write a simple `aws_test.js`.  In this example, it will just import in the AWS libraries, display Hello World to the console and then also display info about the AWS library to the console.  
 
-6. Created a simple `test.html` that includes the `aws_test_browser.js`
+6. Run `npm run build` to generate `aws_test_browser.js` from `aws_test.js`
 
-7. Any additional changes to `aws_test.js` will require me to run `npm run build` again.
+7. Created a simple `test.html` that includes the `aws_test_browser.js`.  Look for the output in the console (press F12 in chrome for windows).
+
+8. Any additional changes to `aws_test.js` will require me to run `npm run build` again.  
